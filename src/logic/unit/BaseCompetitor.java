@@ -19,13 +19,13 @@ public class BaseCompetitor {
 		this.setHp(hp);
 		this.setPower(power);
 	}
-	
+
 	public void attack(BaseCompetitor enemy) {
 		enemy.setHp(enemy.getHp() - this.getPower());
 	}
-	
+
 	public String getType() {
-		return "BaseCompetitor";
+		return this.getClass().getSimpleName();
 	}
 
 	// setters & getters
